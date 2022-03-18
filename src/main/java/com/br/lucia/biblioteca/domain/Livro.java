@@ -1,5 +1,6 @@
 package com.br.lucia.biblioteca.domain;
 
+import com.br.lucia.biblioteca.enums.EstadoAluguel;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -10,6 +11,9 @@ import java.util.List;
 @Setter
 @ToString
 public class Livro {
-    private List<Aluno> listaAluno;
-    private List<Autor> listaAutor;
+   private String nome;
+   private Long id;
+   private Autor autor;
+   private EstadoAluguel estadoAluguel;
+
 }

@@ -1,30 +1,23 @@
 package com.br.lucia.biblioteca.domain;
 
+import com.br.lucia.biblioteca.enums.EstadoAluguel;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
-import java.math.BigDecimal;
 
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
 public class Pessoa {
-    private BigDecimal id;
+    private Long id;
     private String nome;
     private String sobrenome;
     private String documento;
     private Integer cpf;
 
-    public Pessoa(){
-
-    }
-
-    public Pessoa(BigDecimal id, String nome, String sobrenome, String documento, Integer cpf) {
-        this.id = id;
-        this.nome = nome;
-        this.sobrenome = sobrenome;
-        this.documento = documento;
-        this.cpf = cpf;
-    }
 
     @Override
     public String toString() {
@@ -36,4 +29,6 @@ public class Pessoa {
                 ", cpf=" + cpf +
                 '}';
     }
+
+
 }

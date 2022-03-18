@@ -1,7 +1,8 @@
 package com.br.lucia.biblioteca.service;
 
-public interface LivroService {
-    public default void prinLivro() {
+import com.br.lucia.biblioteca.domain.Livro;
 
-    }
+public interface LivroService {
+    public void preencheLivro();
+    public void printLivro(Livro livro);
 }
